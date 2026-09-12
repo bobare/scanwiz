@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ScanWiz Pro</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --primary-light: #e0f2fe;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --accent: #10b981;
+            --tag-bg: #f1f5f9;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #38bdf8;
+                --primary-dark: #0284c7;
+                --primary-light: #082f49;
+                --text-main: #f1f5f9;
+                --text-muted: #94a3b8;
+                --bg-body: #0f172a;
+                --bg-card: #1e293b;
+                --border-color: #334155;
+                --accent: #34d399;
+                --tag-bg: #1e293b;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 40px;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 18px;
+                border-radius: 14px;
+            }
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 28px;
+            margin-bottom: 32px;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: var(--text-muted);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 10px;
+        }
+
+        .toc {
+            background-color: var(--tag-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 36px;
+        }
+
+        .toc h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        .toc ol {
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        .toc a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 36px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 18px 0 8px 0;
+            color: var(--text-main);
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: var(--text-main);
+            font-size: 15px;
+        }
+
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .highlight-card {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 12px 12px 0;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-card p {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .permission-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        .permission-table th, .permission-table td {
+            border: 1px solid var(--border-color);
+            padding: 12px 14px;
+            text-align: left;
+        }
+
+        .permission-table th {
+            background-color: var(--tag-bg);
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .badge-essential {
+            background-color: #fef3c7;
+            color: #b45309;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .badge-optional {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .contact-box {
+            background-color: var(--tag-bg);
+            border-radius: 12px;
+            padding: 18px 22px;
+            margin-top: 16px;
+        }
+
+        a {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="app-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+            </svg>
+            Verified Privacy Standard
+        </div>
+        <h1>Privacy Policy for ScanWiz Pro</h1>
+        <div class="meta-info">
+            <span><strong>Application:</strong> ScanWiz Pro (Android)</span>
+            <span><strong>Effective Date:</strong> September 8, 2026</span>
+            <span><strong>Last Updated:</strong> September 8, 2026</span>
+        </div>
+    </header>
+
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ol>
+            <li><a href="#overview">Overview & Core Philosophy</a></li>
+            <li><a href="#controller">Data Controller & Contact Information</a></li>
+            <li><a href="#information-collection">Information We Collect & Process</a></li>
+            <li><a href="#permissions">Android Device Permissions & Purpose</a></li>
+            <li><a href="#ml-kit">On-Device Camera & Barcode Processing</a></li>
+            <li><a href="#cloud-sync">Personal Cloud Storage & Backups</a></li>
+            <li><a href="#third-parties">Third-Party Libraries & Services</a></li>
+            <li><a href="#retention-deletion">Data Retention & Your Deletion Controls</a></li>
+            <li><a href="#user-rights">Your Rights (GDPR, CCPA/CPRA, CalOPPA)</a></li>
+            <li><a href="#children">Children's Privacy Protection (COPPA)</a></li>
+            <li><a href="#security">Data Security Measures</a></li>
+            <li><a href="#changes">Changes to this Privacy Policy & Contact Us</a></li>
+        </ol>
+    </div>
+
+    <!-- 1. Overview -->
+    <section id="overview">
+        <h2>1. Overview & Core Philosophy</h2>
+        <p>
+            Welcome to <strong>ScanWiz Pro</strong> ("we", "our", or "the Application"). We are dedicated to providing a powerful, privacy-first QR code and barcode scanning, generation, and history utility for Android devices.
+        </p>
+        <div class="highlight-card">
+            <p>
+                <strong>Privacy-First Commitment:</strong> ScanWiz Pro is built on an <em>offline-first architecture</em>. Your barcode scans, generated codes, personal bookmarks, notes, and history records remain stored exclusively on your local device. We do not operate remote tracking servers, sell personal data, or monitor the contents of what you scan.
+            </p>
+        </div>
+    </section>
+
+    <!-- 2. Controller -->
+    <section id="controller">
+        <h2>2. Data Controller & Contact Information</h2>
+        <p>
+            If you have questions, concerns, or requests regarding this Privacy Policy or your personal information, you may contact the application developer:
+        </p>
+        <div class="contact-box">
+            <p><strong>Application:</strong> ScanWiz Pro</p>
+            <p><strong>Developer Contact Email:</strong> <a href="mailto:benson.obare@gmail.com">benson.obare@gmail.com</a></p>
+            <p><strong>Support & Inquiries:</strong> Available via in-app feedback or email response within 48 hours.</p>
+        </div>
+    </section>
+
+    <!-- 3. Information Collection -->
+    <section id="information-collection">
+        <h2>3. Information We Collect & Process</h2>
+        <h3>A. Information Stored Locally on Your Device</h3>
+        <ul>
+            <li><strong>Scan Records:</strong> When you scan a barcode or QR code, the decoded text (e.g., URL, Wi-Fi credentials, contact card, product code), date and time, code format, and optional custom notes or categories are stored locally in an encrypted Room SQLite database on your device.</li>
+            <li><strong>Generated Barcodes:</strong> Data you input to generate QR codes or barcodes (e.g., custom Wi-Fi network details, text notes, email addresses) is processed entirely locally on-device.</li>
+            <li><strong>User Preferences:</strong> Dark/Light/System theme choices, haptic feedback toggle, audio beep toggle, auto-copy setting, and camera reticle configurations are saved in Android <code>SharedPreferences</code> on your device.</li>
+        </ul>
+
+        <h3>B. Information We DO NOT Collect</h3>
+        <ul>
+            <li>We do not record, store, or stream your camera video feed or photos to any remote server.</li>
+            <li>We do not collect your real-time physical GPS location coordinates.</li>
+            <li>We do not harvest your phone contacts, browsing history, or personal identifiers.</li>
+            <li>We do not sell, rent, or monetize your scan history with data brokers or advertising exchanges.</li>
+        </ul>
+    </section>
+
+    <!-- 4. Permissions -->
+    <section id="permissions">
+        <h2>4. Android Device Permissions & Purpose</h2>
+        <p>
+            ScanWiz Pro requests the minimum set of permissions necessary to deliver barcode scanning and generation features. Below is an exhaustive list:
+        </p>
+        <table class="permission-table">
+            <thead>
+                <tr>
+                    <th>Permission</th>
+                    <th>Classification</th>
+                    <th>Explicit Purpose & Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>android.permission.CAMERA</code></td>
+                    <td><span class="badge-essential">Essential for Scanning</span></td>
+                    <td>Used strictly in real-time within the camera preview to decode barcodes and QR codes. Live camera frames are analyzed instantaneously in volatile device RAM and are never recorded or uploaded.</td>
+                </tr>
+                <tr>
+                    <td><code>android.permission.INTERNET</code></td>
+                    <td><span class="badge-optional">Optional Cloud / Ads</span></td>
+                    <td>Used solely for user-initiated cloud backup synchronization to your personal cloud account (Google Drive, OneDrive), fetching web link metadata if you open a scanned URL, and loading banner ads in the free version.</td>
+                </tr>
+                <tr>
+                    <td><code>android.permission.VIBRATE</code></td>
+                    <td><span class="badge-optional">User Comfort</span></td>
+                    <td>Provides tactile haptic feedback when a barcode is successfully recognized and read. Can be toggled off at any time in Settings.</td>
+                </tr>
+                <tr>
+                    <td><code>android.permission.FLASHLIGHT</code></td>
+                    <td><span class="badge-optional">Scanning Assist</span></td>
+                    <td>Allows the user to turn on the hardware flashlight/torch for scanning in dark or low-light conditions.</td>
+                </tr>
+                <tr>
+                    <td>Photo Picker / Media Access</td>
+                    <td><span class="badge-optional">User Selected</span></td>
+                    <td>Uses Android's zero-permission system Photo Picker (<code>PickVisualMedia</code>). The application only receives temporary read access to the specific image file you explicitly choose to scan.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 5. ML Kit -->
+    <section id="ml-kit">
+        <h2>5. On-Device Camera & Barcode Processing</h2>
+        <p>
+            ScanWiz Pro integrates <strong>Google ML Kit Barcode Scanning API</strong> and <strong>ZXing ("Zebra Crossing")</strong>.
+        </p>
+        <ul>
+            <li><strong>100% On-Device Processing:</strong> The visual recognition and mathematical decoding algorithms execute locally on your smartphone processor.</li>
+            <li><strong>No Image Uploads:</strong> Camera frames captured by the CameraX API are analyzed in memory and discarded in milliseconds. Frames are never cached to persistent storage or transmitted over the internet.</li>
+            <li><strong>Multi-Format Support:</strong> Local decoders support standard 1D and 2D formats (QR Code, Data Matrix, Aztec, PDF417, EAN-13, EAN-8, UPC-A, UPC-E, Code 128, Code 39, Code 93, Codabar, ITF).</li>
+        </ul>
+    </section>
+
+    <!-- 6. Cloud Sync -->
+    <section id="cloud-sync">
+        <h2>6. Personal Cloud Storage & Backups</h2>
+        <p>
+            ScanWiz Pro includes an optional Cloud Sync feature designed with user autonomy in mind:
+        </p>
+        <ul>
+            <li><strong>User-Configured Accounts:</strong> The app does not default to any developer or hardcoded account. You can optionally connect your own personal cloud account (such as Google Drive, Microsoft OneDrive, Dropbox, or custom storage).</li>
+            <li><strong>Private Vault Folder:</strong> When enabled, scan backups are saved directly into your personal account's dedicated application vault (e.g., <code>/Google Drive/ScanWiz_Backups/</code>).</li>
+            <li><strong>Zero Developer Access:</strong> We have no access to your personal cloud storage credentials, tokens, or files. You may disconnect your cloud account or disable auto-sync at any time from the Cloud Sync screen.</li>
+        </ul>
+    </section>
+
+    <!-- 7. Third Parties -->
+    <section id="third-parties">
+        <h2>7. Third-Party Libraries & Services</h2>
+        <p>
+            To deliver core functionality and sustain free app distribution, ScanWiz Pro incorporates select third-party SDKs:
+        </p>
+        <ul>
+            <li>
+                <strong>Google Play Services & Google ML Kit:</strong> Provides on-device barcode vision models. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+            </li>
+            <li>
+                <strong>Google Mobile Ads (AdMob):</strong> Displayed solely in the free tier of the application. AdMob may collect pseudonymous advertising identifiers (AAID) and crash telemetry to serve relevant ads according to your device advertising preferences. Users can remove all ads completely by upgrading to ScanWiz Pro.
+            </li>
+            <li>
+                <strong>Google Play In-App Billing:</strong> Handles secure transactions for the Pro upgrade. Payment details (credit card numbers, billing addresses) are handled exclusively by Google Play; ScanWiz Pro never receives or stores payment credentials.
+            </li>
+        </ul>
+    </section>
+
+    <!-- 8. Retention & Deletion -->
+    <section id="retention-deletion">
+        <h2>8. Data Retention & Your Deletion Controls</h2>
+        <p>
+            You retain absolute sovereignty over your scan records and generated barcodes:
+        </p>
+        <ul>
+            <li><strong>Individual Deletion:</strong> You can delete any individual scan record directly from the History list with a single tap or swipe.</li>
+            <li><strong>Batch Deletion & Clear All:</strong> In the Settings menu, tapping <strong>"Clear All History"</strong> permanently purges all scan records, custom notes, bookmarks, and generator caches from your device immediately.</li>
+            <li><strong>Data Portability (CSV Export):</strong> You can export your full scan history to a portable CSV spreadsheet file at any time using the <em>"Export Scan History to CSV"</em> button.</li>
+            <li><strong>App Uninstallation:</strong> Uninstalling the application automatically deletes all local app databases, cache files, and preferences managed by the Android operating system.</li>
+        </ul>
+    </section>
+
+    <!-- 9. User Rights -->
+    <section id="user-rights">
+        <h2>9. Your Rights (GDPR, CCPA / CPRA, CalOPPA)</h2>
+        <p>
+            Depending on your jurisdiction (such as the European Economic Area, United Kingdom, or California), you are entitled to specific rights regarding your personal information:
+        </p>
+        <ul>
+            <li><strong>Right to Know & Access:</strong> You have the right to know what data is stored. Because ScanWiz Pro is offline-first, you can view all data directly within the app's History screen.</li>
+            <li><strong>Right to Deletion:</strong> You can purge all data at any moment using the "Clear All History" feature.</li>
+            <li><strong>Right to Portability:</strong> You can export your data via CSV export anytime.</li>
+            <li><strong>No Sale of Personal Data:</strong> We do not sell, rent, or trade your personal information or scan contents to third parties, satisfying California Consumer Privacy Act (CCPA/CPRA) requirements.</li>
+            <li><strong>Do Not Track (DNT) Signals:</strong> ScanWiz Pro does not track users over time across third-party websites or online services.</li>
+        </ul>
+    </section>
+
+    <!-- 10. Children -->
+    <section id="children">
+        <h2>10. Children's Privacy Protection (COPPA)</h2>
+        <p>
+            ScanWiz Pro is a general-purpose utility application. It is not directed to children under the age of 13 (or under 16 in the European Union). We do not knowingly collect personal identifiable information from children. If you believe a child has provided personal information to us, please contact us at <a href="mailto:benson.obare@gmail.com">benson.obare@gmail.com</a> and we will take immediate steps to delete any such data.
+        </p>
+    </section>
+
+    <!-- 11. Security -->
+    <section id="security">
+        <h2>11. Data Security Measures</h2>
+        <p>
+            We take appropriate technical and organizational measures to safeguard your data:
+        </p>
+        <ul>
+            <li><strong>Android Application Sandbox:</strong> Local database files are stored in internal, sandboxed storage protected by Linux user permissions, preventing unauthorized access by other apps.</li>
+            <li><strong>Encrypted Connections:</strong> Any optional network communication (such as personal cloud backup or opening external links) strictly utilizes encrypted TLS/HTTPS protocols.</li>
+            <li><strong>Zero Storage of Raw Camera Streams:</strong> Live camera frames exist solely in ephemeral memory buffers during detection calculations.</li>
+        </ul>
+    </section>
+
+    <!-- 12. Changes -->
+    <section id="changes">
+        <h2>12. Changes to this Privacy Policy & Contact Us</h2>
+        <p>
+            We may update this Privacy Policy from time to time to reflect modifications in our features, technological updates, or legal requirements. The updated policy will be posted with a revised "Last Updated" date. We encourage you to review this policy periodically.
+        </p>
+        <div class="contact-box">
+            <p><strong>For any privacy-related inquiries or questions:</strong></p>
+            <p>Email: <a href="mailto:benson.obare@gmail.com">benson.obare@gmail.com</a></p>
+            <p>App Name: ScanWiz Pro</p>
+            <p>Location: Kenya / Worldwide</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ScanWiz Pro. All rights reserved. Built with privacy, transparency, and user trust.</p>
+    </footer>
+</div>
+
+</body>
+</html>
